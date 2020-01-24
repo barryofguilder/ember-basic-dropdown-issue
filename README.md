@@ -1,7 +1,8 @@
 # my-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Sample Ember app to reproduce the ember-basic-dropdown close issue
+
+See the GitHub issue here: https://github.com/cibernox/ember-basic-dropdown/issues/528
 
 ## Prerequisites
 

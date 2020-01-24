@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<h1>Application</h1>
 {{outlet}}
+
+<BasicDropdown as |Dropdown|>
+  <Dropdown.Trigger>
+    Click Me
+  </Dropdown.Trigger>
+  <Dropdown.Content>
+    <div>
+      <div {{on "click" (fn this.menuItemClicked Dropdown)}}>
+        <LinkTo @route="route-one">
+          Route 1
+        </LinkTo> |
+        <LinkTo @route="route-one">
+          Route 2
+        </LinkTo>
+      </div>
+    </div>
+  </Dropdown.Content>
+</BasicDropdown>
